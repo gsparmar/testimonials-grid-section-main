@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+  margin: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: #ecf2f8;
+  font-size: 13px;
+}
+
+.flex-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.grid-template {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  grid-template-areas:
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+}
+.card {
+  border-radius: 8px;
+  padding: 1em;
+}
+.quote {
+  color: #cfcfcf;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.photo img {
+  width: 1.75rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.card:nth-child(1) {
+  grid-area: one;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+}
+.card:nth-child(2) {
+  grid-area: two;
+  background: #48556a;
+  color: white;
+}
+.card:nth-child(3) {
+  grid-area: three;
+  background-color: white;
+  color: black;
+}
+.card:nth-child(4) {
+  grid-area: four;
+  background: #19202d;
+  color: white;
+}
+.card:nth-child(5) {
+  grid-area: five;
+  background-color: white;
+  color: black;
+}
