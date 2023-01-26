@@ -91,3 +91,15 @@ body {
   background-color: white;
   color: black;
 }
+
+@media(min-width: 1000px){
+    .grid-template {
+        display: grid;
+        gap: 1.5rem;
+        padding: 2rem;
+        max-width: 80rem;
+        grid-template-areas:
+          'one one two five'
+          'three four four five';
+          
+}
