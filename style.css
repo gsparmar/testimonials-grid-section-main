@@ -58,6 +58,9 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.dark {
+  color: #48556a;
+}
 .photo img {
   width: 1.75rem;
   aspect-ratio: 1;
